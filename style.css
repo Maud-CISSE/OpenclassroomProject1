@@ -1,0 +1,472 @@
+body
+{ 
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+main
+{
+	width: 900px;
+	background: white;
+	margin:auto;
+	border: 1px #BDBDBD solid;
+    display: flex;
+	
+}
+
+#conteneur
+{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    justify-content: space-around;
+    background-color: #FF9800;
+}
+
+
+.informations
+{
+	text-align:justify;
+	background-color: #FF9800;
+	height: 100%;
+}
+
+.p
+{
+	padding: 1em;
+	margin: 0.1em;
+	font-size: 15px;
+}
+
+.titregauche
+{
+	text-align: center;
+	border:3px #455A64 solid;	
+	background-color:#455A64;
+	color: #FF9800;
+	font-size: 20px;
+}
+
+#zoro
+{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:100px;
+    width:200px;
+    height:200px;
+    margin-bottom: 40px;
+}
+
+.pe
+{
+	text-align: center;
+}
+
+#partiedroite
+{
+	width: 67%;
+	height:100%;
+	font-size: 13px;
+	flex-direction: column;
+}
+
+mark
+{
+	color: #FF9800;
+	background-color: white;
+}
+
+#nom
+{
+	font-size: 50px;
+	margin-left: 40px;
+}
+
+#metier
+{
+	color: #455A64;
+	font-size: 30px;
+}
+
+em
+{
+	text-decoration: underline;
+	text-decoration-color: #FF9800;
+}
+
+.partiecv
+{
+	border-bottom: 1.5px solid #FF9800;
+	margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+	color:  #455A64;
+	opacity: 1;   
+}
+
+.paragcv
+{
+	font-size: 15px;
+}
+
+#conteneurfoo
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 15px;
+}
+
+.form
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 15px;
+}	
+
+h2
+{
+	font-size: 18px;
+}
+
+h3
+{
+	font-size: 18px;
+}
+
+
+.fa-graduation-cap
+{
+	color: #FF9800;
+	font-size: 25px;
+}
+
+.fa-briefcase
+{
+	color: #FF9800;
+	font-size: 25px;
+}
+
+.fa-pencil-alt
+{
+	color: #FF9800;
+	font-size: 25px;
+}
+
+                /* Différents formats d'écrans*/
+
+@media only screen and (min-width: 1500px)
+{
+    main
+    {
+    	width: auto;
+    }
+
+    .p
+    {
+    	font-size: 25px;
+    }
+
+    .titregauche
+    {
+    	font-size: 32px;
+    	border:8px #455A64 solid;
+    }
+
+    .partiedroite
+    {
+    	font-size: 25px;
+    }
+
+     #nom
+    {
+    	font-size: 62px;
+    }
+
+    #metier
+    {
+    	font-size: 42px;
+    }
+
+    .partiecv
+    {
+    	font-size: 32px;
+    } 
+
+    .paragcv
+    {
+    	font-size: 22.5px;
+    }
+
+    .form
+    {
+    	font-size: 25px;
+    }
+    
+    .fa-graduation-cap
+    {
+    	font-size: 30px;
+    }
+
+    .fa-briefcase
+    {
+    	font-size: 30px;
+    }
+
+    .fa-pencil-alt
+    {
+    	font-size: 30px;
+    }
+
+    #conteneurfoo
+    {
+    	font-size: 22px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px)
+{
+   
+   
+       .p
+    {
+    	font-size: 18px;
+    }
+    
+    .titregauche
+    {
+        font-size: 25px; 
+        border:5px #455A64 solid;     
+    }
+
+    .partiedroite
+    {
+        font-size: 18px;
+    }
+     
+    #nom
+    {
+    	font-size: 55px;
+    }
+
+    #metier
+    {
+    	font-size: 35px;
+    }
+
+    .partiecv
+    {
+    	font-size: 25px;
+    } 
+
+    .paragcv
+    {
+    	font-size: 15.5px;
+    }
+
+    .form
+    {
+    	font-size: 18px;
+    }
+
+    #conteneurfoo
+    {
+    	font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width:900px)
+{
+    main
+    {   width: 100%;
+    	flex-direction: column;
+    }
+
+	#conteneur
+	{  
+	    width: 100%;
+	}
+
+	.informations
+	{
+		text-align: center;
+	}
+
+   #partiedroite
+    {
+	    width: 100%;
+	}
+
+	#nom
+	{
+		text-align: center;
+		
+	}
+
+}
+
+@media only screen and (max-width:580px)
+{
+	.form
+	{
+		flex-direction:column;
+	}
+
+	.paragcv
+	{
+		text-align:center;
+		font-size: 18px; 
+	}
+
+	p
+	{
+		text-align: center;
+		font-size: 20px;
+	}
+
+	li
+    {
+	    list-style: none;
+	    padding-right: 30px;
+	    padding-top: 10px;
+    }
+
+    h2
+	{
+		text-align: center;
+	}
+
+
+	 #conteneurfoo
+	{
+	    flex-direction: column;	
+	}
+}
+
+@media only screen and (max-width: 440px)
+{
+	.partiecv
+	{
+		text-align:center;
+        margin-left: 40px;
+        margin-right: 40px;
+        font-size: 27px;
+    }
+    
+    .titregauche
+    {
+        font-size: 25px; 
+        border:5px #455A64 solid;     
+    }
+
+    .p
+    {
+        font-size: 23px;
+    }
+     
+    #nom
+    {
+    	font-size: 70px;
+    }
+
+    #metier
+    {
+    	font-size: 50px;
+    }
+
+    .paragcv
+    {
+    	font-size: 23px;
+    }
+
+    p
+    {
+    	font-size: 25.5px;
+    }
+
+    h2
+    {
+    	font-size: 21px;
+    }
+
+}
+
+@media only screen and (max-width: 390px)
+{
+	#metier
+	{
+		font-size: 35px;
+	}
+
+	p
+	{
+	    font-size: 22.5px; 
+	}
+
+	.paragcv
+    {
+    	font-size: 20px;
+    }
+
+	.partiecv
+	{
+		font-size: 22px;
+		margin-left: auto;
+        margin-right: auto;
+       
+    }  
+
+}
+
+@media only screen and (max-width: 320px)
+{
+	#nom
+	{
+		font-size: 50px;
+	}
+
+	#metier
+	{
+		font-size: 25px;
+	}
+
+	.partiecv
+	{
+		font-size: 16.5px;
+
+	}
+
+	.p
+	{
+		font-size: 18px;
+	}
+
+	.paragcv
+	{
+		font-size: 18px;
+	}
+
+	p
+	{
+		font-size: 19px;
+	}
+
+}	
+
+
+
+
+
+
