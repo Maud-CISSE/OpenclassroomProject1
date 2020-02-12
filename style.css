@@ -2,8 +2,7 @@ body
 { 
     width: 100vw;
     height: 100vh;
-    margin: 0;
-    padding: 0;
+    margin: auto;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
 }
@@ -15,7 +14,6 @@ main
 	margin:auto;
 	border: 1px #BDBDBD solid;
     display: flex;
-	
 }
 
 #conteneur
@@ -32,7 +30,7 @@ main
 {
 	text-align:justify;
 	background-color: #FF9800;
-	height: 100%;
+	height:100%;
 }
 
 .p
@@ -312,7 +310,6 @@ h3
 	#nom
 	{
 		text-align: center;
-		
 	}
 
 }
@@ -422,10 +419,9 @@ h3
 
 	.partiecv
 	{
-		font-size: 22px;
-		margin-left: auto;
-        margin-right: auto;
-       
+	   font-size: 22px;
+	   margin-left: auto;
+       margin-right: auto;
     }  
 
 }
