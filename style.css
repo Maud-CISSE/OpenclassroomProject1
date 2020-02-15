@@ -1,43 +1,21 @@
 body
-{ 
-    width: 100vw;
-    height: 100vh;
+{   position: relative; 
+    height: auto;
     margin: auto;
+    padding: 0
     font-family: 'Roboto', sans-serif;
+    display: flex;
     overflow-x: hidden;
+    width: 900px;
 }
-
-main
-{
-	width: 900px;
-	background: white;
-	margin:auto;
-	border: 1px #BDBDBD solid;
-    display: flex;
-}
-
-#conteneur
-{
-    display: flex;
+     /*Partie informations*/
+#informations
+{   
+	display: flex;
     flex-direction: column;
     width: 33%;
     justify-content: space-around;
     background-color: #FF9800;
-}
-
-
-.informations
-{
-	text-align:justify;
-	background-color: #FF9800;
-	height:100%;
-}
-
-.p
-{
-	padding: 1em;
-	margin: 0.1em;
-	font-size: 15px;
 }
 
 .titregauche
@@ -49,9 +27,14 @@ main
 	font-size: 20px;
 }
 
+.infos
+{
+	text-align: center;
+	height: 10%;
+}
+
 #zoro
 {
-
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -64,23 +47,49 @@ main
     margin-bottom: 40px;
 }
 
-.pe
+#contact
 {
-	text-align: center;
+    text-align:justify;
+	background-color: #FF9800;
+	height:100%;
 }
 
-#partiedroite
+.about
+{
+   display: flex;
+   flex-direction: column;  
+   height: 1000%;
+}
+
+.p
+{
+	padding: 1em;
+	margin: 0.1em;
+	font-size: 15px;
+}
+
+   /*Hobbies*/
+
+.hobbies figure
+{
+	text-align: center;
+}    
+.hobbies figure i
+{
+	 color: grey;
+	font-size: 40px;
+}
+
+     /*Parties formations et expériences*/
+#expandtrain
 {
 	width: 67%;
 	height:100%;
 	font-size: 13px;
 	flex-direction: column;
-}
-
-mark
-{
-	color: #FF9800;
-	background-color: white;
+	background: white;
+	margin:auto;
+	border: 1px #BDBDBD solid;
 }
 
 #nom
@@ -93,15 +102,23 @@ mark
 {
 	color: #455A64;
 	font-size: 30px;
+	margin-left: 30px;
+	margin-bottom: 60px;
 }
 
-em
+#expandtrain header h1 span
+{
+	color: #FF9800;
+}
+
+#expandtrain header h3 span
 {
 	text-decoration: underline;
 	text-decoration-color: #FF9800;
+	font-style: italic;
 }
 
-.partiecv
+.mytitle
 {
 	border-bottom: 1.5px solid #FF9800;
 	margin-left: 30px;
@@ -111,12 +128,19 @@ em
 	opacity: 1;   
 }
 
-.paragcv
+.mytitle h2
 {
-	font-size: 15px;
+	font-size: 23px;
 }
+  /*Icones*/
+.mytitle h2 i
+{
+	color: #FF9800;
+	font-size: 25px;
+}
+   /*Icones fin*/
 
-#conteneurfoo
+.articleformation
 {
 	display: flex;
 	flex-direction: row;
@@ -124,66 +148,106 @@ em
 	font-size: 15px;
 }
 
-.form
+.articleformation div:nth-child(1)
 {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	font-size: 15px;
+	width: 30%;
+}
+
+.articleformation div:nth-child(2)
+{
+	width: 40%;
+}
+
+.articleformation div:nth-child(2) h3
+{
+    font-size: 18px;   
 }	
 
-h2
+.articleExp
 {
-	font-size: 18px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 15px;
 }
 
-h3
+.articleExp div:nth-child(1)
 {
-	font-size: 18px;
+	width: 30%;
 }
 
-
-.fa-graduation-cap
+.articleExp div:nth-child(2)
 {
-	color: #FF9800;
-	font-size: 25px;
+	width: 70%;
 }
 
-.fa-briefcase
+.articleExp div:nth-child(2) ul
 {
-	color: #FF9800;
-	font-size: 25px;
+	width: 90%;
 }
 
-.fa-pencil-alt
+.articleExp div:nth-child(2) h4
 {
-	color: #FF9800;
-	font-size: 25px;
+	font-size: 19px;
+	font-weight: bold;
 }
 
-                /* Différents formats d'écrans*/
+.articleExp div:nth-child(2) h5
+{
+	font-size: 17px;
+}
+
+/*--------------Recommandations---------------*/
+#recommandation div:nth-child(2)
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 17px;
+	text-align: center;
+}
+
+.articlereco
+{
+	width: 50%;
+}
+
+/*-------------media queries-----------*/
 
 @media only screen and (min-width: 1500px)
 {
-    main
+    body
     {
     	width: auto;
     }
 
+    .infos
+    {
+	   height: 50%;
+    }
+
+    #zoro
+    {
+       border-radius:200px;
+       width:300px;
+       height:300px;
+       margin-bottom: 40px;
+    }
+    
     .p
     {
-    	font-size: 25px;
+    	font-size: 30px;
     }
 
     .titregauche
     {
-    	font-size: 32px;
+    	font-size: 35px;
     	border:8px #455A64 solid;
     }
 
-    .partiedroite
+    .hobbies figure i
     {
-    	font-size: 25px;
+	    font-size: 70px;
     }
 
      #nom
@@ -193,69 +257,301 @@ h3
 
     #metier
     {
-    	font-size: 42px;
+    	font-size: 50px;
     }
 
-    .partiecv
-    {
-    	font-size: 32px;
-    } 
+    .articleformation div:nth-child(2) h3
+	{
+	    font-size: 30px;   
+	}
 
-    .paragcv
+	.articleformation
+	{
+		font-size: 30px;
+	}	
+
+    .articleExp
     {
-    	font-size: 22.5px;
+    	font-size: 30px;
     }
 
-    .form
+    .articleExp div:nth-child(2) h4
     {
-    	font-size: 25px;
+	  font-size: 30px;
+    }
+
+    .articleExp div:nth-child(2) h5
+    {
+	  font-size: 30px;
     }
     
-    .fa-graduation-cap
+    .mytitle h2
     {
-    	font-size: 30px;
+      font-size: 35px;
+    }
+    
+    .mytitle h2 i
+    {
+	  font-size: 30px;
     }
 
-    .fa-briefcase
+    #recommandation div:nth-child(2)
     {
-    	font-size: 30px;
-    }
-
-    .fa-pencil-alt
-    {
-    	font-size: 30px;
-    }
-
-    #conteneurfoo
-    {
-    	font-size: 22px;
+	  font-size: 25px;
     }
 }
 
 
 @media only screen and (max-width: 1200px)
 {
-   
-   
-       .p
+
+   .infos
     {
-    	font-size: 18px;
+      height: 12%;
+    }
+
+   #zoro
+    {
+       border-radius:150px;
+       width:250px;
+       height:250px;
+       margin-bottom: 40px;
+    }
+
+   .p
+    {
+    	font-size: 25px;
     }
     
     .titregauche
     {
-        font-size: 25px; 
+        font-size: 30px; 
         border:5px #455A64 solid;     
     }
 
-    .partiedroite
+    .about
     {
-        font-size: 18px;
+     text-align: center;
     }
-     
+
+    .hobbies figure i
+    {
+	    font-size: 50px;
+    }
+    
     #nom
     {
-    	font-size: 55px;
+    	font-size: 57px;
+    }
+
+    #metier
+    {
+    	font-size: 45px;
+    }
+
+      .articleformation div:nth-child(2) h3
+	{
+	    font-size: 25px;   
+	}
+
+	.articleformation
+	{
+		font-size: 25px;
+	}	
+
+	 .articleExp
+    {
+    	font-size: 25px;
+    }
+
+     .articleExp div:nth-child(2) h4
+    {
+	  font-size: 25px;
+    }
+
+    .articleExp div:nth-child(2) h5
+    {
+	  font-size: 25px;
+    }
+
+     .mytitle h2
+    {
+      font-size: 30px;
+    }
+    
+    .mytitle h2 i
+    {
+	  font-size: 30px;
+    }
+    
+    #recommandation div:nth-child(2)
+    {
+	  font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:900px)
+{
+    body
+    {
+    	flex-direction: column;
+    	width: 100%;
+    }
+
+    #informations
+   {
+       width: 100%; 
+   }
+   .souscontact
+   {
+   	   text-align: center;
+   }
+
+    #expandtrain
+    {   width: 100%;
+    	flex-direction: column;
+    }
+
+	#nom
+	{
+		text-align: center;
+	}
+    
+    #recommandation div:nth-child(2)
+    {
+    	font-size: 24px;
+    }
+}
+
+@media only screen and (max-width:580px)
+{
+	
+  .p
+    {
+    	font-size: 25px;
+    }
+    
+    .titregauche
+    {
+        font-size: 30px;      
+    }
+    
+    #nom
+    {
+    	font-size: 60px;
+    }
+
+    #metier
+    {
+    	font-size: 47px;
+    }
+
+	.articleformation
+	{   
+		flex-direction: column;
+		font-size: 24px;
+	}
+
+	.articleformation div:nth-child(1)
+	{
+		width:100%;
+	}
+
+	.articleformation div:nth-child(1) ul li p 
+	{
+		font-size: 23px;
+	}
+
+	 li
+	{
+	  list-style: none;
+	}
+
+	.articleformation div:nth-child(2)
+	{
+		width: 100%;
+	}
+
+	.articleformation div
+	{
+		text-align: center;
+	}	
+
+	.articleformation div:nth-child(2) h3
+	{
+	    font-size: 23px;   
+	}	
+
+	 .articleExp
+    {   
+    	flex-direction: column;
+    	font-size: 24px;
+    }
+     
+    .articleExp div
+    {
+    	text-align: center;
+    } 
+     
+    .articleExp div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	.articleExp div:nth-child(1) ul li p 
+	{
+		font-size: 23px;
+		margin-right: 35px;
+	}
+
+	.articleExp div:nth-child(2)
+	{
+		width: 100%;
+	}
+
+    .articleExp div:nth-child(2) h4
+    {
+	  font-size: 25px;
+    }
+
+    .articleExp div:nth-child(2) h5
+    {
+	  font-size: 24px;
+    }
+
+     .mytitle h2
+    {
+      font-size: 25px;
+    }
+    
+    .mytitle h2 i
+    {
+	  font-size: 25px;
+    }
+    
+    #recommandation div:nth-child(2)
+    { 
+      flex-direction: column;
+	  font-size: 21px;
+    }
+}
+
+@media only screen and (max-width: 440px)
+{
+    
+  .p
+    {
+    	font-size: 22px;
+    }
+    
+    .titregauche
+    {
+        font-size: 25px;      
+    }
+    
+     #nom
+    {
+    	font-size: 45px;
     }
 
     #metier
@@ -263,201 +559,194 @@ h3
     	font-size: 35px;
     }
 
-    .partiecv
+	.articleformation
+	{   
+		font-size: 22px;
+	}
+
+	.articleformation div:nth-child(1) ul li p 
+	{
+		font-size: 22px;
+	}	
+
+	.articleformation div:nth-child(2) h3
+	{
+	    font-size: 22px;   
+	}	
+
+	 .articleExp
+    {   
+    	font-size: 22px;
+    }
+
+     .mytitle h2
     {
-    	font-size: 25px;
+      font-size: 23px;
+      text-align: center;
     } 
-
-    .paragcv
+    
+    .mytitle h2 i
     {
-    	font-size: 15.5px;
+	  font-size: 23px;
     }
-
-    .form
-    {
-    	font-size: 18px;
+    
+    #recommandation div:nth-child(2)
+    { 
+	  font-size: 19px;
     }
-
-    #conteneurfoo
-    {
-    	font-size: 15px;
-    }
-
 }
-
-@media only screen and (max-width:900px)
+@media only screen and (max-width: 390px)
 {
-    main
-    {   width: 100%;
-    	flex-direction: column;
-    }
-
-	#conteneur
-	{  
-	    width: 100%;
-	}
-
-	.informations
-	{
-		text-align: center;
-	}
-
-   #partiedroite
+    #zoro
     {
-	    width: 100%;
-	}
-
-	#nom
-	{
-		text-align: center;
-	}
-
-}
-
-@media only screen and (max-width:580px)
-{
-	.form
-	{
-		flex-direction:column;
-	}
-
-	.paragcv
-	{
-		text-align:center;
-		font-size: 18px; 
-	}
-
-	p
-	{
-		text-align: center;
-		font-size: 20px;
-	}
-
-	li
-    {
-	    list-style: none;
-	    padding-right: 30px;
-	    padding-top: 10px;
+       border-radius:100px;
+       width:200px;
+       height:200px;
     }
-
-    h2
-	{
-		text-align: center;
-	}
-
-
-	 #conteneurfoo
-	{
-	    flex-direction: column;	
-	}
-}
-
-@media only screen and (max-width: 440px)
-{
-	.partiecv
-	{
-		text-align:center;
-        margin-left: 40px;
-        margin-right: 40px;
-        font-size: 27px;
+    
+    .p
+    {
+    	font-size: 20px;
     }
     
     .titregauche
     {
         font-size: 25px; 
-        border:5px #455A64 solid;     
+        border:4px #455A64 solid;     
     }
 
-    .p
+    .hobbies figure i
     {
-        font-size: 23px;
+	    font-size: 35px;
     }
-     
+    
     #nom
     {
-    	font-size: 70px;
+    	font-size: 40px;
+    	margin-right: 20px;
     }
-
+    
     #metier
     {
-    	font-size: 50px;
+    	font-size: 33px;
     }
 
-    .paragcv
-    {
-    	font-size: 23px;
-    }
-
-    p
-    {
-    	font-size: 25.5px;
-    }
-
-    h2
-    {
-    	font-size: 21px;
-    }
-
-}
-
-@media only screen and (max-width: 390px)
-{
-	#metier
-	{
-		font-size: 35px;
+    .articleformation
+	{   
+		font-size: 20px;
 	}
 
-	p
+	.articleformation div:nth-child(1) ul li p 
 	{
-	    font-size: 22.5px; 
-	}
+		font-size: 20px;
+		margin-right:20px; 
+	}	
 
-	.paragcv
-    {
+	.articleformation div:nth-child(2) h3
+	{
+	    font-size: 20px;   
+	}	
+
+	 .articleExp
+    {   
     	font-size: 20px;
     }
 
-	.partiecv
+    .articleExp div:nth-child(1) ul li p 
 	{
-	   font-size: 22px;
-	   margin-left: auto;
-       margin-right: auto;
-    }  
+		font-size: 22px;
+		margin-right: 48px;
+	}
+
+    .articleExp div:nth-child(2)
+	{
+		width: 90%;
+	}
+
+	 .articleExp div:nth-child(2) h4
+    {
+	  font-size: 22px;
+	  margin-left: 17px;
+    }
+
+    .articleExp div:nth-child(2) h5
+    {
+	  font-size: 22px;
+	  margin-left: 17px;
+    }
+
+     .mytitle h2
+    {
+      font-size: 22px;
+      text-align: center;
+    }
+    
+    .mytitle h2 i
+    {
+	  font-size: 23px;
+    }
+    
+    #recommandation div:nth-child(2)
+    { 
+	  font-size: 18px;
+    }
 
 }
 
 @media only screen and (max-width: 320px)
 {
-	#nom
-	{
-		font-size: 50px;
-	}
-
-	#metier
-	{
-		font-size: 25px;
-	}
-
-	.partiecv
-	{
-		font-size: 16.5px;
-
-	}
-
-	.p
+    .p
 	{
 		font-size: 18px;
 	}
 
-	.paragcv
-	{
+	.titregauche
+    {
+        font-size: 20px; 
+        border:3px #455A64 solid;     
+    }
+
+    .articleformation
+	{   
 		font-size: 18px;
 	}
 
-	p
+    .articleExp
+    {   
+    	font-size: 18px;
+    }
+ 
+     .articleExp div:nth-child(1) ul li p 
 	{
-		font-size: 19px;
+		font-size: 20px;
+		margin-right: 40px;
 	}
+
+	 .articleExp div:nth-child(2) h4
+    {
+	  margin-left: 22px;
+    }
+   
+    .articleExp div:nth-child(2) h5
+    {
+	  margin-left: 25px;
+    }
+
+     .mytitle h2
+    {
+      font-size: 19px;
+      text-align: center;
+    }
+    
+    .mytitle h2 i
+    {
+	  font-size: 15px;
+    }
+    
+    #recommandation div:nth-child(2)
+    { 
+	  font-size: 18px;
+    }
 
 }	
 
