@@ -1,757 +1,308 @@
 body
-{   position: relative; 
+{
+	    position: relative;
     height: auto;
-    margin: auto;
+    margin: 0 auto;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     display: flex;
+    flex-direction: row;
     overflow-x: hidden;
     width: 900px;
 }
-     /*Partie informations*/
-#informations
-{   
+
+#informations{
+	width: 30%;
+	background-color: #FF9800;
 	display: flex;
     flex-direction: column;
-    width: 33%;
-    justify-content: space-around;
-    background-color: #FF9800;
 }
 
-.titregauche
-{
+#informations section div h3{
 	text-align: center;
-	border:3px #455A64 solid;	
-	background-color:#455A64;
-	color: #FF9800;
-	font-size: 20px;
+	background-color: #455A64;
+    color: #FF9800;
 }
 
-.infos
-{
-	text-align: center;
+
+.infos{
+	text-align: center;;
 	height: 10%;
 }
 
-#zoro
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    overflow:hidden;
-    -webkit-border-radius:50px;
-    -moz-border-radius:50px;
-    border-radius:100px;
-    width:200px;
-    height:200px;
-    margin-bottom: 40px;
+.infos img{
+	width: 80%;
+    border-radius: 100%;
 }
 
-#contact
-{
-    text-align:justify;
-	background-color: #FF9800;
-	height:100%;
+#contact{
 }
 
-.about
-{
-   display: flex;
-   flex-direction: column;  
-   height: 1000%;
-}
-
-.p
-{
-	padding: 1em;
-	margin: 0.1em;
-	font-size: 15px;
-}
-
-   /*Hobbies*/
-
-.hobbies figure
-{
-	text-align: center;
-}    
-.hobbies figure i
-{
-	 color: grey;
-	font-size: 40px;
-}
-
-     /*Parties formations et expériences*/
-#expandtrain
-{
-	width: 67%;
-	height:100%;
-	font-size: 13px;
-	flex-direction: column;
-	background: white;
-	margin:auto;
-	border: 1px #BDBDBD solid;
-}
-
-#nom
-{
-	font-size: 50px;
-	margin-left: 40px;
-}
-
-#metier
-{
-	color: #455A64;
-	font-size: 30px;
-	margin-left: 30px;
-	margin-bottom: 60px;
-}
-
-#expandtrain header h1 span
-{
-	color: #FF9800;
-}
-
-#expandtrain header h3 span
-{
-	text-decoration: underline;
-	text-decoration-color: #FF9800;
-	font-style: italic;
-}
-
-.mytitle
-{
-	border-bottom: 1.5px solid #FF9800;
-	margin-left: 30px;
-    margin-right: 30px;
-    font-size: 20px;
-	color:  #455A64;
-	opacity: 1;   
-}
-
-.mytitle h2
-{
-	font-size: 23px;
-}
-  /*Icones*/
-.mytitle h2 i
-{
-	color: #FF9800;
-	font-size: 25px;
-}
-   /*Icones fin*/
-
-.articleformation
-{
+#contact div{
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	font-size: 15px;
+    flex-direction: column;
+    height: 100%;
 }
 
-.articleformation div:nth-child(1)
-{
+#contact div p{
+	margin-left: 15px;
+}
+
+.sousContact{
+	    margin: auto;
+}
+
+.about{
+	display: flex;
+    flex-direction: column;
+}
+
+.about div:nth-child(2){
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+}
+
+.hobbies figure{
+	text-align: center;
+}
+
+.hobbies figure i{
+	font-size: 35px;
+    padding: 8px;
+    color: grey;
+}
+
+#expAndTrain{
+	width: 70%;
+	display: flex;
+    flex-direction: column
+}
+
+#expAndTrain header{
+	margin-left: 7%;
+	font-size: 24px;
+}
+
+#expAndTrain header h1 span{
+	color: #FF9800;
+}
+
+#expAndTrain header h3{
+    color: #455A64;
+}
+
+#expAndTrain header h3 span{
+    text-decoration: underline;
+    text-decoration-color: #FF9800;
+    font-style: italic;
+}
+
+.myTitle{
+	    margin-left: 3%;
+    border-bottom: 2px solid #f0972a;
+    margin-right: 3%;
+}
+
+
+.myTitle h2{
+	 color: #455A64;
+	 margin:0;
+}
+
+.myTitle h2 i{
+	color:#FF9800;
+	margin-right: 15px;
+}
+
+.articleFormation{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.articleFormation div:nth-child(1){
 	width: 30%;
 }
 
-.articleformation div:nth-child(2)
-{
+.articleFormation div:nth-child(2){
 	width: 40%;
 }
 
-.articleformation div:nth-child(2) h3
-{
-    font-size: 18px;   
-}	
-
-.articleExp
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	font-size: 15px;
+.articleFormation div:nth-child(2) h2{
+	font-size: 17px;
 }
 
-.articleExp div:nth-child(1)
-{
+.articleExp{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.articleExp div:nth-child(1){
 	width: 30%;
 }
 
-.articleExp div:nth-child(2)
-{
+.articleExp div:nth-child(2){
 	width: 70%;
 }
 
-.articleExp div:nth-child(2) ul
-{
-	width: 90%;
+.articleExp div:nth-child(2) ul{
+	width: 100%;
 }
 
-.articleExp div:nth-child(2) h4
-{
-	font-size: 19px;
+.articleExp div:nth-child(2) h4,h5{
 	font-weight: bold;
+	font-size: 15px;
 }
 
-.articleExp div:nth-child(2) h5
-{
-	font-size: 17px;
-}
-
-/*--------------Recommandations---------------*/
-#recommandation div:nth-child(2)
-{
+#recommandation div:nth-child(2){
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	font-size: 17px;
+}
+
+.articleReco{
+	width: 50%;
 	text-align: center;
 }
 
-.articlereco
+ul
 {
-	width: 50%;
+    list-style: none;
 }
 
-/*-------------media queries-----------*/
-
-@media only screen and (min-width: 1500px)
+#pro div:nth-child(1) ul li i
 {
-    body
-    {
-    	width: auto;
-    }
-
-    .infos
-    {
-	   height: 50%;
-    }
-
-    #zoro
-    {
-       border-radius:200px;
-       width:300px;
-       height:300px;
-       margin-bottom: 40px;
-    }
-    
-    .p
-    {
-    	font-size: 30px;
-    }
-
-    .titregauche
-    {
-    	font-size: 35px;
-    	border:8px #455A64 solid;
-    }
-
-    .hobbies figure i
-    {
-	    font-size: 70px;
-    }
-
-     #nom
-    {
-    	font-size: 62px;
-    }
-
-    #metier
-    {
-    	font-size: 50px;
-    }
-
-    .articleformation div:nth-child(2) h3
-	{
-	    font-size: 30px;   
-	}
-
-	.articleformation
-	{
-		font-size: 30px;
-	}	
-
-    .articleExp
-    {
-    	font-size: 30px;
-    }
-
-    .articleExp div:nth-child(2) h4
-    {
-	  font-size: 30px;
-    }
-
-    .articleExp div:nth-child(2) h5
-    {
-	  font-size: 30px;
-    }
-    
-    .mytitle h2
-    {
-      font-size: 35px;
-    }
-    
-    .mytitle h2 i
-    {
-	  font-size: 30px;
-    }
-
-    #recommandation div:nth-child(2)
-    {
-	  font-size: 25px;
-    }
+	color: #FF9800;
+	margin-right: 0.5em;
+	font-size: 13px;
 }
 
-
-@media only screen and (max-width: 1200px)
+#formation div:nth-child(1) ul li i
 {
-
-   .infos
-    {
-      height: 12%;
-    }
-
-   #zoro
-    {
-       border-radius:150px;
-       width:250px;
-       height:250px;
-       margin-bottom: 40px;
-    }
-
-   .p
-    {
-    	font-size: 25px;
-    }
-    
-    .titregauche
-    {
-        font-size: 30px; 
-        border:5px #455A64 solid;     
-    }
-
-    .about
-    {
-     text-align: center;
-    }
-
-    .hobbies figure i
-    {
-	    font-size: 50px;
-    }
-    
-    #nom
-    {
-    	font-size: 57px;
-    }
-
-    #metier
-    {
-    	font-size: 45px;
-    }
-
-      .articleformation div:nth-child(2) h3
-	{
-	    font-size: 25px;   
-	}
-
-	.articleformation
-	{
-		font-size: 25px;
-	}	
-
-	 .articleExp
-    {
-    	font-size: 25px;
-    }
-
-     .articleExp div:nth-child(2) h4
-    {
-	  font-size: 25px;
-    }
-
-    .articleExp div:nth-child(2) h5
-    {
-	  font-size: 25px;
-    }
-
-     .mytitle h2
-    {
-      font-size: 30px;
-    }
-    
-    .mytitle h2 i
-    {
-	  font-size: 30px;
-    }
-    
-    #recommandation div:nth-child(2)
-    {
-	  font-size: 20px;
-    }
+	color: #FF9800;
+    margin-right: 0.5em;
+	font-size: 13px;
 }
 
-@media only screen and (max-width:900px)
+.hobbies figure i:nth-child(1)
 {
-    body
-    {
-    	flex-direction: column;
-    	width: 100%;
-    }
-
-    #informations
-   {
-       width: 100%; 
-   }
-   .souscontact
-   {
-   	   text-align: center;
-   }
-
-    #expandtrain
-    {   width: 100%;
-    	flex-direction: column;
-    }
-
-	#nom
-	{
-		text-align: center;
-	}
-    
-    #recommandation div:nth-child(2)
-    {
-    	font-size: 24px;
-    }
+   border: 3px solid #455A64;
+   border-radius:27px;
+   padding: 7px;
+   font-size: 30px;
 }
 
-@media only screen and (max-width:580px)
+.hobbies figure i:nth-child(2)
 {
-	
-  .p
-    {
-    	font-size: 25px;
-    }
-    
-    .titregauche
-    {
-        font-size: 30px;      
-    }
-    
-    #nom
-    {
-    	font-size: 60px;
-    }
-
-    #metier
-    {
-    	font-size: 47px;
-    }
-
-	.articleformation
-	{   
-		flex-direction: column;
-		font-size: 24px;
-	}
-
-	.articleformation div:nth-child(1)
-	{
-		width:100%;
-	}
-
-	.articleformation div:nth-child(1) ul li p 
-	{
-		font-size: 23px;
-	}
-
-	 li
-	{
-	  list-style: none;
-	}
-
-	.articleformation div:nth-child(2)
-	{
-		width: 100%;
-	}
-
-	.articleformation div
-	{
-		text-align: center;
-	}	
-
-	.articleformation div:nth-child(2) h3
-	{
-	    font-size: 23px;   
-	}	
-
-	 .articleExp
-    {   
-    	flex-direction: column;
-    	font-size: 24px;
-    }
-     
-    .articleExp div
-    {
-    	text-align: center;
-    } 
-     
-    .articleExp div:nth-child(1)
-	{
-		width: 100%;
-	}
-
-	.articleExp div:nth-child(1) ul li p 
-	{
-		font-size: 23px;
-		margin-right: 35px;
-	}
-
-	.articleExp div:nth-child(2)
-	{
-		width: 100%;
-	}
-
-    .articleExp div:nth-child(2) h4
-    {
-	  font-size: 25px;
-    }
-
-    .articleExp div:nth-child(2) h5
-    {
-	  font-size: 24px;
-    }
-
-     .mytitle h2
-    {
-      font-size: 25px;
-    }
-    
-    .mytitle h2 i
-    {
-	  font-size: 25px;
-    }
-    
-    #recommandation div:nth-child(2)
-    { 
-      flex-direction: column;
-	  font-size: 21px;
-    }
+   border: 3px solid #455A64;
+   border-radius:30px;
+   padding: 7px;
+   font-size: 30px;
 }
 
-@media only screen and (max-width: 440px)
+.hobbies figure i:nth-child(3)
 {
-    
-  .p
-    {
-    	font-size: 22px;
-    }
-    
-    .titregauche
-    {
-        font-size: 25px;      
-    }
-    
-     #nom
-    {
-    	font-size: 45px;
-    }
-
-    #metier
-    {
-    	font-size: 35px;
-    }
-
-	.articleformation
-	{   
-		font-size: 22px;
-	}
-
-	.articleformation div:nth-child(1) ul li p 
-	{
-		font-size: 22px;
-	}	
-
-	.articleformation div:nth-child(2) h3
-	{
-	    font-size: 22px;   
-	}	
-
-	 .articleExp
-    {   
-    	font-size: 22px;
-    }
-
-     .mytitle h2
-    {
-      font-size: 23px;
-      text-align: center;
-    } 
-    
-    .mytitle h2 i
-    {
-	  font-size: 23px;
-    }
-    
-    #recommandation div:nth-child(2)
-    { 
-	  font-size: 19px;
-    }
-}
-@media only screen and (max-width: 390px)
-{
-    #zoro
-    {
-       border-radius:100px;
-       width:200px;
-       height:200px;
-    }
-    
-    .p
-    {
-    	font-size: 20px;
-    }
-    
-    .titregauche
-    {
-        font-size: 25px; 
-        border:4px #455A64 solid;     
-    }
-
-    .hobbies figure i
-    {
-	    font-size: 35px;
-    }
-    
-    #nom
-    {
-    	font-size: 40px;
-    	margin-right: 20px;
-    }
-    
-    #metier
-    {
-    	font-size: 33px;
-    }
-
-    .articleformation
-	{   
-		font-size: 20px;
-	}
-
-	.articleformation div:nth-child(1) ul li p 
-	{
-		font-size: 20px;
-		margin-right:20px; 
-	}	
-
-	.articleformation div:nth-child(2) h3
-	{
-	    font-size: 20px;   
-	}	
-
-	 .articleExp
-    {   
-    	font-size: 20px;
-    }
-
-    .articleExp div:nth-child(1) ul li p 
-	{
-		font-size: 22px;
-		margin-right: 48px;
-	}
-
-    .articleExp div:nth-child(2)
-	{
-		width: 90%;
-	}
-
-	 .articleExp div:nth-child(2) h4
-    {
-	  font-size: 22px;
-	  margin-left: 17px;
-    }
-
-    .articleExp div:nth-child(2) h5
-    {
-	  font-size: 22px;
-	  margin-left: 17px;
-    }
-
-     .mytitle h2
-    {
-      font-size: 22px;
-      text-align: center;
-    }
-    
-    .mytitle h2 i
-    {
-	  font-size: 23px;
-    }
-    
-    #recommandation div:nth-child(2)
-    { 
-	  font-size: 18px;
-    }
-
-}
-
-@media only screen and (max-width: 320px)
-{
-    .p
-	{
-		font-size: 18px;
-	}
-
-	.titregauche
-    {
-        font-size: 20px; 
-        border:3px #455A64 solid;     
-    }
-
-    .articleformation
-	{   
-		font-size: 18px;
-	}
-
-    .articleExp
-    {   
-    	font-size: 18px;
-    }
- 
-     .articleExp div:nth-child(1) ul li p 
-	{
-		font-size: 20px;
-		margin-right: 40px;
-	}
-
-	 .articleExp div:nth-child(2) h4
-    {
-	  margin-left: 22px;
-    }
-   
-    .articleExp div:nth-child(2) h5
-    {
-	  margin-left: 25px;
-    }
-
-     .mytitle h2
-    {
-      font-size: 19px;
-      text-align: center;
-    }
-    
-    .mytitle h2 i
-    {
-	  font-size: 15px;
-    }
-    
-    #recommandation div:nth-child(2)
-    { 
-	  font-size: 18px;
-    }
-
+   border: 3px solid #455A64;
+   border-radius:25px;
+   padding: 7px;
+   font-size: 30px;
 }	
 
+/* ---------------------- media queries ------------------------ */
 
+@media screen and (max-width: 900px) {
+	body{
+		flex-direction: column;
+		width: 100%;
+	}
+	#informations{
+		width: 100%;
+	}
 
+	.about div:nth-child(2) {
+    	width: 60%;
+	}
+	#expAndTrain{
+		width: 100%;
+	}
+	.infos img{
+		width: 30%;
+	}
 
+	#expAndTrain header {
+    	margin: auto;
+    	text-align: center;
+	}
 
+	#contact{
+		text-align: center;
+	}
 
+	.articleExp div:nth-child(2) ul {
+    	width: 80%;
+	}
+	.myTitle h2 {
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 820px) {
+
+	.articleFormation {
+		flex-direction: column;
+	}
+	.articleFormation div:nth-child(1) {
+    /* width: 30%; */
+    margin: auto;
+    text-align: center;
+	}
+
+	.articleFormation div:nth-child(1) ul {
+    padding: 0;
+        text-align: center;
+	}
+
+	.articleFormation div:nth-child(2) {
+    /* width: 40%; */
+    margin: auto;
+    text-align: center;
+	}
+
+	.articleExp {
+		flex-direction: column;
+	}
+	.articleExp div:nth-child(1) {
+    /* width: 30%; */
+    margin: auto;
+    text-align: center;
+	}
+
+	.articleExp div:nth-child(1) ul {
+    padding: 0;
+    
+    text-align: center;
+	}
+
+	.articleExp div:nth-child(2) ul {
+    text-align: left;
+	}
+
+	.articleExp div:nth-child(2) {
+    /* width: 40%; */
+    margin: auto;
+    text-align: center;
+	}
+
+	#recommandation div:nth-child(2) {
+    flex-direction: column;
+	}
+
+	.articleReco{
+		margin:auto;
+		width: 25%;
+	}
+
+}
